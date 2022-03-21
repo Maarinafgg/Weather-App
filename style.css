@@ -1,0 +1,124 @@
+h1 {
+  text-transform: capitalize;
+  color: black;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+small {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-family: "Fira Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h4 {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#search-input {
+  border-radius: 30px;
+  margin: 10px 0px 10px 25px;
+  border: solid;
+  background-color: white;
+  padding: 0px 34px;
+}
+
+.container {
+  margin: 100px auto;
+  display: block;
+  padding: 15px 50px;
+  max-width: 420px;
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  );
+  border-radius: 30px;
+}
+::placeholder {
+  color: black;
+  font-size: 1 em;
+  text-align: center;
+}
+
+.location {
+  max-width: 35px;
+  position: relative;
+  bottom: 2px;
+}
+.location:hover {
+  cursor: pointer;
+}
+
+.sun {
+  max-width: 24%;
+}
+
+.cloudy {
+  max-width: 30%;
+  margin: 0 auto;
+  display: block;
+}
+
+.date {
+  font-size: 12px;
+}
+.col-5 {
+  font-size: small;
+}
+
+.col-7 {
+  font-size: small;
+  font-weight: bold;
+}
+.temp {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 20px 0 25px;
+}
+.weekday {
+  border: 1px solid #cdeffc;
+  background: #cdeffc;
+  color: blue;
+  font-style: italic;
+
+  text-align: center;
+}
+.wheatericons {
+  max-width: 110%;
+}
+.temperature {
+  color: black;
+  text-align: center;
+  font-size: 10px;
+}
+.maintemperature {
+  font-size: 45px;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+}
+.temph2 {
+  text-align: center;
+}
+
+.units {
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: -22px;
+}
