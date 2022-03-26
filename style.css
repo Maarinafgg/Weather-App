@@ -31,15 +31,9 @@ h4 {
   background-color: white;
   padding: 0px 34px;
 }
-#sourceCode {
-  font-size: 10px;
-  font-family: monospace;
-  text-align: center;
-  opacity: 0.5;
-}
 
 .container {
-  margin: 100px auto 12px;
+  margin: 100px auto;
   display: block;
   padding: 15px 50px;
   max-width: 420px;
