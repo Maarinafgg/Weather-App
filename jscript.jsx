@@ -1,33 +1,28 @@
-function formatDate(showdate) {
-let date = new Date( showdate);
-let hours = date.getHours ();
-if (hours < 10) {hours = `0${hours}`;}
-let minutes = date.getMinutes();
-if (minutes < 10) {minutes = `0${minutes}`;}
-let wdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-let day = wdays[date.getDay ()];
-return `${day} ${hours}:${minutes}`;
+let now = new Date();
+let h4 = document.querySelector("h4");
 
-
+let wdays = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday"
+];
+let day = wdays[now.getDay()];
+let hours = now.getHours();
+if (hours < 10) {
+  hours = `0${hours}`;
 }
-function formatDay(timestamp) {
-  let date = new Date(timestamp * 1000);
-  let day = date.getDay();
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-
-  return days[day];
+let minutes = now.getMinutes();
+if (minutes < 10) {
+  minutes = `0${minutes}`;
 }
 
-
-//let h4 = document.querySelector ("h4");
-
+h4.innerHTML = `${day} ${hours}:${minutes}`;
 
 
-
-
-
-
-//h4.innerHTML = 
 
 
 function showTemperature(response){
