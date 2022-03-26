@@ -58,6 +58,20 @@ function getCurrentLocation(event){
 
 }
 
+function convertFahrenheit(event){
+  event.preventDefault();
+ let temperatureElement = document.querySelector ("#maintemperature");
+temperatureElement.innerHTML = 66;
+}
+
+function convertCelsius(event){
+  event.preventDefault();
+  let temperatureElement = document.querySelector ("#maintemperature");
+temperatureElement.innerHTML = 19;
+
+}
+
+
 
 let searchform = document.querySelector("#form-search");
 searchform.addEventListener("submit", formSearch);
@@ -65,6 +79,12 @@ searchform.addEventListener("submit", formSearch);
 let currentLocation = document.querySelector("#currentlocation");
 currentLocation.addEventListener("click",getCurrentLocation);
 searchCity("Sydney");
+
+let fahrenheitTemp = document.querySelector ("#fahrenheit-temp");
+fahrenheitTemp.addEventListener("click", convertFahrenheit);
+
+let celsiusTemp = document.querySelector ("#celsius-temp");
+celsiusTemp.addEventListener("click", convertCelsius);
 
   //HERE I'M GOING TO CREATE A API CALL TO OPEN THE WEATHER
 //ONCE I HAVE THE RESPONSE WE DISPLAY CITY NAME AND TEMPERATURE
@@ -91,21 +111,5 @@ searchCity("Sydney");
 
 //}
 
-//function convertFahrenheit(event){
-  //event.preventDefault();
- //let temperatureElement = document.querySelector ("#maintemperature");
-//temperatureElement.innerHTML = 66;
-//}
 
-//function convertCelsius(event){
-  //event.preventDefault();
-   //let temperatureElement = document.querySelector ("#maintemperature");
-//temperatureElement.innerHTML = 19;
 
-//}
-
-//let fahrenheitTemp = document.querySelector ("#fahrenheit-temp");
-//fahrenheitTemp.addEventListener("click", convertFahrenheit);
-
-//let celsiusTemp = document.querySelector ("#celsius-temp");
-//celsiusTemp.addEventListener("click", convertCelsius);
